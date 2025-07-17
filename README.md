@@ -1,24 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps:
+
+### 1. Set up MongoDB
+
+Ensure you have a MongoDB instance running and accessible. You can use a local MongoDB server or a cloud-hosted solution like MongoDB Atlas.
+
+### 2. Environment Variables
+
+Create a `.env.local` file in the root of your project and add the following environment variables. Replace the placeholder values with your actual MongoDB connection string and a strong, random string for the NextAuth.js secret.
+
+```
+MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
+NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET
+NEXTAUTH_URL=http://localhost:3000 # Adjust for production
+```
+
+### 3. Install Dependencies
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 

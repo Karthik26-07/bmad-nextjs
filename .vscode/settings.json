@@ -1,0 +1,7 @@
+{
+  "chat.agent.enabled": true,
+  "github.copilot.chat.agent.runTasks": true,
+  "github.copilot.chat.agent.autoFix": true,
+  "chat.mcp.discovery.enabled": true,
+  "chat.tools.autoApprove": false
+}
